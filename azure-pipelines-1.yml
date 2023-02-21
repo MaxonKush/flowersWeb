@@ -1,0 +1,50 @@
+# HTML
+# Archive your static HTML project and save it with the build record.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+- stage: Tests
+  jobs:
+  - job: 
+    displayName: Unit tests
+    steps:
+    - script: echo simulate running your unit tests!
+      displayName: 'Run unit tests'
+  - job: 
+    displayName: UI tests
+    steps:
+    - script:  echo simulate running your ui tests!
+      displayName: 'Run unit tests'
+
+- stage: Build
+  dependsOn: [] # This will remove implicit dependency and run in parallel with the stage: Tests above 
+  jobs:
+  - job:
+    displayName: Build the application
+    steps:
+    - script: |
+        echo Running all builds commands...
+        echo ... commands successfully completed.
+      displayName: 'Run build scripts & tasks'
+
+- stage: Dev
+  dependsOn:
+  - Tests
+  - Build
+  jobs:
+  - deployment:
+    displayName: Dev deploy
+    environment: WebServer
+    strategy:
+     runOnce:
+       deploy:
+         steps:
+           - script: echo Running in the Dev environment as deployment job
+             displayName: 'Dev based stage'
