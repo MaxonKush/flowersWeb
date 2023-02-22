@@ -1,5 +1,0 @@
-pool:
-  name: WebServers
-
-steps:
-- script: echo hello world
