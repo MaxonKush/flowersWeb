@@ -1,0 +1,5 @@
+pool:
+  name: myPrivateAgents
+
+steps:
+- script: echo hello world
