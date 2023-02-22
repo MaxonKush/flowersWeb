@@ -12,9 +12,6 @@ pool:
 steps:
 - task: ArchiveFiles@2
   inputs:
-    rootFolderOrFile: '$(build.sourcesDirectory)'
-- task: ArchiveFiles@2
-  inputs:
     rootFolderOrFile: '/var/www/'
     includeRootFolder: false
     archiveType: 'tar'
