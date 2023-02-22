@@ -20,5 +20,4 @@ steps:
     archiveType: 'tar'
     archiveFile: '$(Build.ArtifactStagingDirectory)/$(Build.BuildId).zip'
     replaceExistingArchive: true
-    includeRootFolder: false
 - task: PublishBuildArtifacts@1
