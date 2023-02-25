@@ -1075,7 +1075,7 @@ header .container {
     cursor: pointer;
 }
 .checkbox:checked + label:before {
-    content: url(../icons/check.svg);
+    content: url(../icon/check.svg);
     position: absolute;
     transform: translate(-42%, 12%);
 }
@@ -1134,7 +1134,7 @@ header .container {
     cursor: pointer;
 }
 .radio:checked + label:before {
-    content: url(../icons/ellipse.svg);
+    content: url(../icon/ellipse.svg);
     position: absolute;
     transform: translate(-49%, 68%);
 }
@@ -1440,12 +1440,12 @@ header .container {
         min-height: 24px;
     }
     .checkbox:checked + label:before {
-        content: url(../icons/check.svg);
+        content: url(../icon/check.svg);
         position: absolute;
         transform: translate(-45%, 0) scale(0.8);
     }
     .radio:checked + label:before {
-        content: url(../icons/check.svg);
+        content: url(../icon/check.svg);
         position: absolute;
         transform: translate(-50%, 0%) scale(0.8);
     }
