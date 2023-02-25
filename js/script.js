@@ -6026,7 +6026,7 @@
             center: [53.89436, 27.57974]
         }).addTo(Z), Z.touchZoom.disable(), Z.scrollWheelZoom.disable(), Z.boxZoom.disable(), Z.keyboard.disable();
         var B = o.a.icon({
-            iconUrl: "icons/mapMarker.svg",
+            iconUrl: "icon/mapMarker.svg",
             iconSize: [55, 72]
         });
         o.a.marker([53.89436, 27.57974], {
