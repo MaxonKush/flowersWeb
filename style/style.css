@@ -167,7 +167,7 @@ header .container {
         display: block;
         width: 40px;
         height: 35px;
-        background: url(../icons/hamMenu.svg) 0 0/contain no-repeat;
+        background: url(../icon/hamMenu.svg) 0 0/contain no-repeat;
     }
     .drop {
         display: block;
