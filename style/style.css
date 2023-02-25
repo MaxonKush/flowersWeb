@@ -298,7 +298,7 @@ header .container {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    background: url(../img/big.png) 0 0/cover no-repeat;
+    background: url(../image/big.png) 0 0/cover no-repeat;
 }
 .offer__btn, .offer__title {
     text-align: center;
